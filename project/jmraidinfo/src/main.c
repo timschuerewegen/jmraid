@@ -210,7 +210,7 @@ void print_buffer(const void *data, uint32_t size, bool print_addr, bool print_t
 
 void print_chip_info(const struct jmraid_chip_info *info)
 {
-	print("Firmware version = %d.%d.%d.%d\n", info->firmware_version[0], info->firmware_version[1], info->firmware_version[2], info->firmware_version[3]);
+	print("Firmware version = %02d.%02d.%02d.%02d\n", info->firmware_version[3], info->firmware_version[2], info->firmware_version[1], info->firmware_version[0]);
 	print("Manufacturer     = %s\n", info->manufacturer);
 	print("Product name     = %s\n", info->product_name);
 	print("Serial number    = %d\n", info->serial_number);
